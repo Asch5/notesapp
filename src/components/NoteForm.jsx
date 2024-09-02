@@ -16,6 +16,7 @@ export default function NoteForm({ onSubmit }) {
                 justifyContent="center"
                 gap="2rem"
                 padding="2rem"
+                backgroundColor="#ffffff"
             >
                 <TextField
                     name="name"
