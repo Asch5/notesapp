@@ -26,7 +26,7 @@ export default function SocialPost(props) {
                 gap="40px"
                 direction={{ base: 'column-reverse', large: 'row' }}
                 justifyContent="flex-start"
-                alignItems="flex-start"
+                alignItems="center"
                 shrink="0"
                 alignSelf="stretch"
                 position="relative"
@@ -210,6 +210,7 @@ export default function SocialPost(props) {
                 <Image
                     width={{ base: '100%', large: '160px' }}
                     height={{ base: 'auto', large: '200px' }}
+                    maxWidth="160px"
                     objectFit="cover"
                     display="block"
                     shrink="0"

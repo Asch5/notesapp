@@ -64,9 +64,30 @@ body {
     color: #000000;
 }
 
-.amplify-link {
-    color: var(--amplify-colors-black-100);
+.amplify-menu-content {
+    --amplify-components-button-color: var(--amplify-colors-secondary-90);
 }
+.amplify-menu-trigger {
+    --amplify-components-button-border-color: var(
+        --amplify-colors-secondary-90
+    );
+    --amplify-components-button-color: var(--amplify-colors-secondary-90);
+}
+
+.amplify-link {
+    text-decoration: none;
+    color: black;
+}
+
+.amplify-link:visited {
+    color: gray;
+}
+
 .amplify-link:hover {
-    color: var(--amplify-colors-purple-60);
+    color: blue;
+}
+
+.amplify-link:active {
+    color: blue;
+    text-decoration: underline;
 }

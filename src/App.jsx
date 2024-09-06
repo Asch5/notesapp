@@ -8,6 +8,7 @@ import outputs from '../amplify_outputs.json';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
 import Forum from './pages/Forum';
+import './App.css';
 
 Amplify.configure(outputs);
 
@@ -32,7 +33,7 @@ export default function App() {
 
                         <Flex
                             className="App"
-                            justifyContent="center"
+                            justifyContent="flex-start"
                             alignItems="center"
                             direction="column"
                             width="100%"
