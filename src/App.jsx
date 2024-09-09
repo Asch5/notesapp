@@ -9,12 +9,9 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
 import Forum from './pages/Forum';
 import './App.css';
+import Todos from './pages/Todos';
 
 Amplify.configure(outputs);
-
-function Features() {
-    return <div>Features</div>;
-}
 
 export default function App() {
     const { notes, createNote, deleteNote } = useNotes();
@@ -60,10 +57,7 @@ export default function App() {
                                         </>
                                     }
                                 />
-                                <Route
-                                    path="/features"
-                                    element={<Features />}
-                                />
+                                <Route path="/todos" element={<Todos />} />
                                 <Route path="/forum" element={<Forum />} />
                                 {/* Add more routes for other pages */}
                             </Routes>

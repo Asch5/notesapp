@@ -30,7 +30,7 @@ export default function Header({ signOut }) {
             {isLarge ? (
                 <Flex as="nav" gap="1rem">
                     <NavLink to="/">Home</NavLink>
-                    <NavLink to="/features">Features</NavLink>
+                    <NavLink to="/todos">Todos</NavLink>
                     <NavLink to="/forum">Forum</NavLink>
                     <NavLink to="/docs">Docs</NavLink>
                     <NavLink to="/blog">Blog</NavLink>
@@ -46,11 +46,8 @@ export default function Header({ signOut }) {
                         <NavLinkMenu to="/" closeMenu={closeMenu}>
                             Home
                         </NavLinkMenu>
-                        <NavLinkMenu to="/features" closeMenu={closeMenu}>
-                            Features
-                        </NavLinkMenu>
-                        <NavLinkMenu to="/forum" closeMenu={closeMenu}>
-                            Forum
+                        <NavLinkMenu to="/todos" closeMenu={closeMenu}>
+                            Todos
                         </NavLinkMenu>
                         <NavLinkMenu to="/docs" closeMenu={closeMenu}>
                             Docs

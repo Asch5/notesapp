@@ -14,6 +14,12 @@ const schema = a.schema({
             image: a.string(),
         })
         .authorization((allow) => [allow.owner()]),
+    Todo: a
+        .model({
+            content: a.string(),
+            isDone: a.boolean(),
+        })
+        .authorization((allow) => [allow.owner()]),
 });
 
 export type Schema = ClientSchema<typeof schema>;
